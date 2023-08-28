@@ -1,0 +1,9 @@
+Alphabet Soup was an algorithm created to predict whether the applicant for funding would be successful or not. With the help of machine learning and neural networks, we are able to use to create a binary classifier to help predict if the applicant is able to be funded by Alphabet Soup.
+
+To get the results from this test, first I removed any information that was not needed such as 'EIN' and the 'NAME' columns and left the rest for the model. Later, I added back the 'NAME' column was brought back for binning purposes. Then the data has to be separated into training data and testing data. The variable set for the model was 'IS_SUCCESSFUL'. For the binary classification, 1 was used to declare ‘yes’ and 0 was used to declare ‘no’. We analyzed the APPLICATION data as well as the CLASSIFICATION data for binning. Also a cutoff was applied to group them together and set it as a new category under the title ‘Other’ for each unique value. For the categorical data, I used get_dummies to confirm if the binning was successful as well to convert the data into numerical form. 
+
+For the compelling, training, and evaluating the model, there were two layers for each model. The number of hidden nodes was determined by the number of features. In the two layer model, 2207 parameters were created. In this first attempt the accuracy was at 69.5% which was not ideal since we wanted a 75% accuracy.  In the second attempt, adding more nodes didn’t help with accuracy since it went down to 63.2%. 
+
+For the optimization test, I was able to get an accuracy of 78.8% with 3298 nodes which was higher than what we wanted which was 75% accuracy. The deep learning model was able to achieve the accuracy goal for Alphabet Soup funding. 
+
+Another test that could be recommended for solving this classification problem would be a Random Forrest Classifier since it would have the potential to gain a better accuracy and generalization without the worry of overfitting the data. 
